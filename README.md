@@ -1,5 +1,5 @@
 # Emberhuk
-Windows Kernel Telemetry Logger
+Windows Kernel Mode Telemetry Logger
 
 ### What does it log?
 
