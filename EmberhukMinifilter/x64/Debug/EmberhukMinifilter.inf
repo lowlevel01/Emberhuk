@@ -1,0 +1,53 @@
+;
+; EmberhukMinifilter.inf
+;
+
+[Version]
+Signature   = "$WINDOWS NT$"
+Class       = "ActivityMonitor"
+ClassGuid   = {b86dff51-a31e-4bac-b3cf-e8cfe75c9fc2}
+Provider    = %ManufacturerName%
+DriverVer = 09/19/2026,2.46.27.860
+CatalogFile = EmberhukMinifilter.cat
+PnpLockdown = 1
+
+[DestinationDirs]
+DefaultDestDir = 12 ; %SystemRoot%\System32\drivers
+
+[DefaultInstall.NTamd64]
+OptionDesc = %ServiceDesc%
+CopyFiles  = EmberhukMinifilter.DriverFiles
+
+[DefaultInstall.NTamd64.Services]
+AddService = %ServiceName%,0x00000002,EmberhukMinifilter.Service
+
+[EmberhukMinifilter.Service]
+DisplayName      = %ServiceName%
+Description      = %ServiceDesc%
+ServiceType      = 1               ; SERVICE_KERNEL_DRIVER
+StartType        = 3               ; SERVICE_DEMAND_START
+ErrorControl     = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary    = %12%\EmberhukMinifilter.sys
+LoadOrderGroup   = "FSFilter Activity Monitor"
+AddReg           = EmberhukMinifilter.AddRegistry
+
+[EmberhukMinifilter.AddRegistry]
+HKR,"Parameters\Instances","DefaultInstance",0x00000000,"EmberhukMinifilterInstance"
+HKR,"Parameters\Instances\EmberhukMinifilterInstance","Altitude",0x00000000,%Altitude%
+HKR,"Parameters\Instances\EmberhukMinifilterInstance","Flags",0x00010001,0x0
+
+[EmberhukMinifilter.DriverFiles]
+EmberhukMinifilter.sys
+
+[SourceDisksNames]
+1 = %DiskName%,,,
+
+[SourceDisksFiles]
+EmberhukMinifilter.sys = 1,,
+
+[Strings]
+ManufacturerName = "Emberhuk"
+ServiceDesc      = "Emberhuk File System Minifilter Monitor"
+ServiceName      = "EmberhukMinifilter"
+Altitude         = "225000"
+DiskName         = "EmberhukMinifilter Source Disk"

@@ -1,0 +1,25 @@
+﻿  Building 'EmberhukMinifilter' with toolset 'WindowsKernelModeDriver10.0' and the 'Desktop' target platform.
+  Stamping x64\Debug\EmberhukMinifilter.inf
+  Stamping [Version] section with DriverVer=09/19/2026,2.46.27.860
+  EmberhukMinifilter.vcxproj -> C:\Dev\Emberhuk\x64\Debug\EmberhukMinifilter.sys
+  Done Adding Additional Store
+  Successfully signed: C:\Dev\Emberhuk\x64\Debug\EmberhukMinifilter.sys
+  
+  ........................
+  Signability test complete.
+  
+  Errors:
+  None
+  
+  Warnings:
+  None
+  
+  Catalog generation complete.
+  C:\Dev\Emberhuk\x64\Debug\EmberhukMinifilter\emberhukminifilter.cat
+  Set catalog attribute.
+  WdkVersion: 10.0.26100.0
+  Set catalog attribute.
+  WdkAssemblyVersion: 10.0.26100.6584
+  Done Adding Additional Store
+  Successfully signed: C:\Dev\Emberhuk\x64\Debug\EmberhukMinifilter\emberhukminifilter.cat
+  

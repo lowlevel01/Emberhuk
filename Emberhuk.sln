@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37203.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EmberhukDrv", "Emberhuk.vcxproj", "{4F6CC661-EFE5-5AC9-5404-8E5387287D49}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shared", "shared", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		EmberhukShared.h = EmberhukShared.h
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EmberhukClient", "EmberhukClient\EmberhukClient.vcxproj", "{6D102BEE-B02B-439B-8BC1-CD80EF9AB6FF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EmberhukMinifilter", "EmberhukMinifilter\EmberhukMinifilter.vcxproj", "{6376389F-4D0B-8A44-9C56-0915D04A91C5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F6CC661-EFE5-5AC9-5404-8E5387287D49}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{4F6CC661-EFE5-5AC9-5404-8E5387287D49}.Debug|ARM64.Build.0 = Debug|ARM64
+		{4F6CC661-EFE5-5AC9-5404-8E5387287D49}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{4F6CC661-EFE5-5AC9-5404-8E5387287D49}.Debug|x64.ActiveCfg = Debug|x64
+		{4F6CC661-EFE5-5AC9-5404-8E5387287D49}.Debug|x64.Build.0 = Debug|x64
+		{4F6CC661-EFE5-5AC9-5404-8E5387287D49}.Debug|x64.Deploy.0 = Debug|x64
+		{4F6CC661-EFE5-5AC9-5404-8E5387287D49}.Release|ARM64.ActiveCfg = Release|ARM64
+		{4F6CC661-EFE5-5AC9-5404-8E5387287D49}.Release|ARM64.Build.0 = Release|ARM64
+		{4F6CC661-EFE5-5AC9-5404-8E5387287D49}.Release|ARM64.Deploy.0 = Release|ARM64
+		{4F6CC661-EFE5-5AC9-5404-8E5387287D49}.Release|x64.ActiveCfg = Release|x64
+		{4F6CC661-EFE5-5AC9-5404-8E5387287D49}.Release|x64.Build.0 = Release|x64
+		{4F6CC661-EFE5-5AC9-5404-8E5387287D49}.Release|x64.Deploy.0 = Release|x64
+		{6D102BEE-B02B-439B-8BC1-CD80EF9AB6FF}.Debug|ARM64.ActiveCfg = Debug|x64
+		{6D102BEE-B02B-439B-8BC1-CD80EF9AB6FF}.Debug|ARM64.Build.0 = Debug|x64
+		{6D102BEE-B02B-439B-8BC1-CD80EF9AB6FF}.Debug|x64.ActiveCfg = Debug|x64
+		{6D102BEE-B02B-439B-8BC1-CD80EF9AB6FF}.Debug|x64.Build.0 = Debug|x64
+		{6D102BEE-B02B-439B-8BC1-CD80EF9AB6FF}.Release|ARM64.ActiveCfg = Release|x64
+		{6D102BEE-B02B-439B-8BC1-CD80EF9AB6FF}.Release|ARM64.Build.0 = Release|x64
+		{6D102BEE-B02B-439B-8BC1-CD80EF9AB6FF}.Release|x64.ActiveCfg = Release|x64
+		{6D102BEE-B02B-439B-8BC1-CD80EF9AB6FF}.Release|x64.Build.0 = Release|x64
+		{6376389F-4D0B-8A44-9C56-0915D04A91C5}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{6376389F-4D0B-8A44-9C56-0915D04A91C5}.Debug|ARM64.Build.0 = Debug|ARM64
+		{6376389F-4D0B-8A44-9C56-0915D04A91C5}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{6376389F-4D0B-8A44-9C56-0915D04A91C5}.Debug|x64.ActiveCfg = Debug|x64
+		{6376389F-4D0B-8A44-9C56-0915D04A91C5}.Debug|x64.Build.0 = Debug|x64
+		{6376389F-4D0B-8A44-9C56-0915D04A91C5}.Debug|x64.Deploy.0 = Debug|x64
+		{6376389F-4D0B-8A44-9C56-0915D04A91C5}.Release|ARM64.ActiveCfg = Release|ARM64
+		{6376389F-4D0B-8A44-9C56-0915D04A91C5}.Release|ARM64.Build.0 = Release|ARM64
+		{6376389F-4D0B-8A44-9C56-0915D04A91C5}.Release|ARM64.Deploy.0 = Release|ARM64
+		{6376389F-4D0B-8A44-9C56-0915D04A91C5}.Release|x64.ActiveCfg = Release|x64
+		{6376389F-4D0B-8A44-9C56-0915D04A91C5}.Release|x64.Build.0 = Release|x64
+		{6376389F-4D0B-8A44-9C56-0915D04A91C5}.Release|x64.Deploy.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {393B13A9-A0B1-4C56-AA9F-79F6AFAC9094}
+	EndGlobalSection
+EndGlobal
